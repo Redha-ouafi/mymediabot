@@ -1,0 +1,521 @@
+  * {
+  box-sizing: border-box;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.header1 {
+ display: flex;
+ flex-wrap: wrap;
+
+ font-size: 10px;
+ height:auto;
+ color: white;
+ background-color: #404A56;
+
+ border: 1px solid black;
+ padding: 1px;
+}
+.header2 {
+ display: flex;
+ flex-wrap: wrap;
+
+  font-size:14px;
+  color: black;
+ background-color: black;
+ border: 0px solid black;
+ padding: 3px;
+ color:cyan
+}
+
+ .footer {
+  display: flex;
+ flex-wrap: wrap;
+  justify-content: center;
+ background-color: black;
+ border: 0px solid cyan;
+ padding: 3px;
+ color: black;
+ text-align: center;
+ font-size: 1em;
+ position: fixed;
+ bottom: 0;
+ width: 100%;
+ margin:auto;
+ }
+
+            
+body {
+
+   background-color: #3b7ba7;
+   background-image: url('redha-ouafi-bot.jpg');
+   background-attachment: fixed;
+   background-position: center center;
+   background-repeat: repeat;
+   background-size: 100% 100%;
+  
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 14px;
+   color:white;
+   line-height: 1.1875;
+   margin: 0;
+   padding: 0;
+    transition: background-image 1s ease-in-out;
+
+    }
+    
+    
+     .header-bot {
+      
+      width: 0;
+      height: 0;
+      border-top:0px solid transparent;
+      border-bottom: 50px solid transparent;
+      border-left: 200px solid black;
+    }
+
+    
+    
+/* Six buttons with code link to some pages in this project */
+ .button-group {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+ margin-top: 10px;
+ }
+
+ .button {
+ display: inline-block;
+ padding: 3px;
+ margin: 3px;
+ background-color: #404A56;
+
+  border: 1px solid cyan;
+ border-radius: 3px;
+ font-size: 1em;
+ color: white;
+ text-align: center;
+ text-decoration: none;
+ }
+
+
+       
+
+
+           .buttonm-group {
+
+ display: flex;
+ flex-wrap: wrap;
+ width: 100px;
+
+ justify-content: center;
+ align-items: center;
+ margin-top: 3px;
+ }
+
+ .buttonm {
+
+  display: inline-block;
+ padding: 3px;
+ margin: 3px;
+ background-color: #c38dff;
+
+  border: 1px solid black;
+ border-radius: 3px;
+ font-size: 1em;
+ color: BLACK;
+ text-align: center;
+ text-decoration: none;
+ }
+
+
+
+                   /* Style the container */
+        .image-container {
+            width: 400px; /* Adjust the width as needed */
+            height: 300px; /* Set the desired height */
+            overflow: auto; /* Add scroll bar when content exceeds container height */
+            background-color: transparent; /* White background */
+            border: 0px solid skyblue; /* Optional border for visual clarity */
+            padding: 3px; /* Add some padding for readability */
+        }
+        /* Style the text inside the container */
+        .image-content {
+             display: flex;
+ flex-wrap: wrap;
+
+
+        }
+
+
+
+           /* Style the container */
+        .text-container {
+
+
+            width: 400px; /* Adjust the width as needed */
+            height: 300px; /* Set the desired height */
+            overflow: auto; /* Add scroll bar when content exceeds container height */
+            background-color: transparent; /* White background */
+            border: 1px solid darkviolet; /* Optional border for visual clarity */
+            padding: 3px; /* Add some padding for readability */
+        }
+        /* Style the text inside the container */
+        .text-content {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #333; /* Optional text color */
+        }
+
+
+
+
+
+
+
+
+
+       .text {
+
+
+background: linear-gradient(
+to right,rgba(0, 168, 253), darkviolet , white);
+background-size: 200% auto;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: gradient 3s linear infinite; }
+@keyframes gradient {
+0% { background-position: 0% 75%;}
+50% { background-position: 100% 50%;}
+100% { background-position: 0% 70%;}
+}
+
+
+
+
+
+
+        
+        
+#newsbot-container {
+  width: 90%;
+  margin: 1px;
+  border-bottom-left-radius: 80px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 80px;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 1px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  overflow-x: auto;
+}
+
+#newsbot-list {
+  list-style: none;
+  padding: 0;
+  width: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 3px;
+  animation: scrollNew 60s linear infinite;
+  justify-content: flex-start; /* ????? ????? */
+}
+
+@keyframes scrollNew {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+#newsbot-list li {
+
+   padding: 10px;
+   border: 1px solid cyan;
+          
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 6px;
+   white-space: nowrap;
+  cursor:pointer;
+   color:#4A7CB9;
+}
+
+#newsbot-list li a {
+  text-decoration: none;
+  color: black;
+}
+
+#newsbot-list:hover {
+  animation-play-state: paused;
+}
+
+#newsbot-list li:hover {
+  background-color: cyan;
+  color: white;
+}
+
+
+
+
+
+     
+
+/*slider imgs*/
+
+.slider-container {
+    overflow: hidden; /* ????? ?? auto ??? hidden ?????? ?????? ?????? */
+    width: 100%;
+    height: 100%;
+    border: 1px solid black; /* ????? ????? ?? ????? ????? */
+}
+
+.slider {
+    display: flex;
+    animation: slide 60s infinite linear;
+}
+
+.slider:hover {
+    animation-play-state: paused; /* ????? ?????? ??? ??????? */
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0%); /* ??? ?????? ?? ?????? */
+    }
+    100% {
+        transform: translateX(-100%); /* ???????? ??? ?????? */
+    }
+}
+
+
+
+        
+
+   
+    
+
+   .menuxv {
+            position: relative;
+           
+            
+        }
+
+        .menuxv-button {
+            padding: 6px;
+            background-color: #3b7ba7;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 1px;
+            height:auto;
+            width:auto;
+             border: 1px solid cyan;
+            
+        }
+
+        .dropdownxv {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+           
+            background-color:#404A56;
+            //backdrop-filter:blur(20px);
+            border: 1px solid cyan;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            list-style-type: none;
+            margin: 0;
+            padding: 3px;
+            //transform: scale(3);
+            color:cyan;
+            
+        }
+
+        .dropdownxv li {
+            position: relative;
+            margin:auto;
+            
+        }
+
+        .dropdownxv a {
+            display: block;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+            white-space: nowrap;
+            background-color:#404A56;
+            backdrop-filter:blur(20px);
+            border:1px solid cyan;
+        }
+
+        .dropdownxv a:hover {
+         
+              background-color:#333B46;
+            
+             color:cyan;
+            
+        }
+
+        .submenuxv {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            background-color:rgba(0, 0, 0, 0.4);
+            backdrop-filter:blur(60px);
+            border: 1px solid cyan;
+            color:white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            list-style-type: none;
+            margin: 0;
+            padding: 3px;
+            z-index: 1000;
+        }
+
+        .dropdownxv li:hover > .submenuxv {
+            display: block;
+
+          
+           
+        }
+
+        .menuxv-button:hover + .dropdownxv,
+        .dropdownxv:hover {
+            display: block;
+        }
+
+
+.btmenu {
+
+ background-color:transparent;
+ width:100%;
+ height:auto:
+ margin:auto;
+ padding:10px;
+ color:white;
+ border:1px solid cyan;
+
+
+}
+
+.btmenu:hover {
+ background-color:#333B46;
+ color:cyan;
+
+}
+
+
+
+
+a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+
+
+    .button:hover {
+  background-color: cyan; /* Button color on hover */
+  color:black;
+}
+
+
+
+     #audio-player3 {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+
+
+
+   .lightbox {
+  display: self;
+  position: fixed;
+
+  width: 100%;
+  height: 400px;
+  top: 50;
+  left: 0;
+  background-color: transparent;
+}
+.lightbox-content {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  height: 400px;
+  overflow: auto;
+  background-color: transparent;
+  padding: 6px;
+}
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 50px;
+  font-weight: bold;
+  color: #f1f1f1;
+  cursor: pointer;
+}
+
+
+   
+
+ /* Flexible layout responsive design */
+
+ .header1 {
+ font-size: 0.5em;
+ padding: 2px;
+ }
+ /* Big red header with red border */
+ .header2 {
+ font-size: 4em;
+ padding: 2px;
+ }
+ /* Six buttons with code link to some pages in this project */
+ .button-group {
+ margin-top: 10px;
+ }
+ .button {
+ padding: 5px;
+ margin: 5px;
+ font-size: 1em;
+ }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.column {
+  flex: 100%;
+
+  padding: 5px;
+}
+.column img {
+
+  width: 100%;
+  height: auto;
+
+      }
+@media screen and (max-width: 600px) {
+  .column {
+
+    width: 100%;
+  }
+
+
+}

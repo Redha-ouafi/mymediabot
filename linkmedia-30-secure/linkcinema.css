@@ -1,0 +1,845 @@
+  
+ * {
+  box-sizing: border-box;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.header1 {
+ display: flex;
+ flex-wrap: wrap;
+
+ font-size: 10px;
+ height:auto;
+ color: white;
+ background-color: #404A56;
+
+ border: 1px solid black;
+ padding: 1px;
+}
+.header2 {
+ display: flex;
+ flex-wrap: wrap;
+
+  font-size:14px;
+  color: black;
+ background-color: black;
+ border: 0px solid black;
+ padding: 3px;
+ color:cyan
+}
+
+ .footer {
+  display: flex;
+ flex-wrap: wrap;
+  justify-content: center;
+ background-color: black;
+ border: 0px solid cyan;
+ padding: 3px;
+ color: black;
+ text-align: center;
+ font-size: 1em;
+ position: fixed;
+ bottom: 0;
+ width: 100%;
+ margin:auto;
+ }
+
+            
+body {
+
+   background-color: #3b7ba7;
+   background-image: url('redha-ouafi-bot.jpg');
+   background-attachment: fixed;
+   background-position: center center;
+   background-repeat: repeat;
+   background-size: 100% 100%;
+  
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 14px;
+   color:white;
+   line-height: 1.1875;
+   margin: 0;
+   padding: 0;
+    transition: background-image 1s ease-in-out;
+
+    }
+    
+    
+     .header-bot {
+      
+      width: 0;
+      height: 0;
+      border-top:0px solid transparent;
+      border-bottom: 50px solid transparent;
+      border-left: 200px solid black;
+    }
+
+    
+    
+/* Six buttons with code link to some pages in this project */
+ .button-group {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+ margin-top: 10px;
+ }
+
+ .button {
+ display: inline-block;
+ padding: 3px;
+ margin: 3px;
+ background-color: #404A56;
+
+  border: 1px solid cyan;
+ border-radius: 3px;
+ font-size: 1em;
+ color: white;
+ text-align: center;
+ text-decoration: none;
+ }
+
+
+       
+
+
+           .buttonm-group {
+
+ display: flex;
+ flex-wrap: wrap;
+ width: 100px;
+
+ justify-content: center;
+ align-items: center;
+ margin-top: 3px;
+ }
+
+ .buttonm {
+
+  display: inline-block;
+ padding: 3px;
+ margin: 3px;
+ background-color: #c38dff;
+
+  border: 1px solid black;
+ border-radius: 3px;
+ font-size: 1em;
+ color: BLACK;
+ text-align: center;
+ text-decoration: none;
+ }
+
+
+
+                   /* Style the container */
+        .image-container {
+            width: 400px; /* Adjust the width as needed */
+            height: 300px; /* Set the desired height */
+            overflow: auto; /* Add scroll bar when content exceeds container height */
+            background-color: transparent; /* White background */
+            border: 0px solid skyblue; /* Optional border for visual clarity */
+            padding: 3px; /* Add some padding for readability */
+        }
+        /* Style the text inside the container */
+        .image-content {
+             display: flex;
+ flex-wrap: wrap;
+
+
+        }
+
+
+
+           /* Style the container */
+        .text-container {
+
+
+            width: 400px; /* Adjust the width as needed */
+            height: 300px; /* Set the desired height */
+            overflow: auto; /* Add scroll bar when content exceeds container height */
+            background-color: transparent; /* White background */
+            border: 1px solid darkviolet; /* Optional border for visual clarity */
+            padding: 3px; /* Add some padding for readability */
+        }
+        /* Style the text inside the container */
+        .text-content {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #333; /* Optional text color */
+        }
+
+
+
+
+
+
+
+
+
+       .text {
+
+
+background: linear-gradient(
+to right,rgba(0, 168, 253), darkviolet , white);
+background-size: 200% auto;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: gradient 3s linear infinite; }
+@keyframes gradient {
+0% { background-position: 0% 75%;}
+50% { background-position: 100% 50%;}
+100% { background-position: 0% 70%;}
+}
+
+
+
+
+
+
+  
+
+        
+        
+#newsbot-container {
+  width: 90%;
+  margin: 1px;
+  border-bottom-left-radius: 80px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 80px;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 1px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  overflow-x: auto;
+}
+
+#newsbot-list {
+  list-style: none;
+  padding: 0;
+  width: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 3px;
+  animation: scrollNew 60s linear infinite;
+  justify-content: flex-start; /* ????? ????? */
+}
+
+#newsbot-listy {
+  list-style: none;
+  padding: 0;
+  width: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  animation: scrollNew 8s linear infinite;
+  overflow:hidden;
+}
+
+@keyframes scrollNew {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+#newsbot-list li {
+
+   padding: 10px;
+   border: 1px solid cyan;
+          
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 6px;
+   white-space: nowrap;
+  cursor:pointer;
+   color:#4A7CB9;
+}
+
+#newsbot-list li a {
+  text-decoration: none;
+  color: black;
+}
+
+#newsbot-list:hover {
+  animation-play-state: paused;
+}
+
+#newsbot-list li:hover {
+  background-color: cyan;
+  color: white;
+}
+
+.button-tvradio {
+  display: flex;
+
+ justify-content: center;
+ align-items: center;
+
+ 
+
+}
+
+.button-tvradio {
+display: inline-block;
+  width:110px;
+  height:100px;
+  padding: 1px;
+  border: 1px solid black;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+    cursor:pointer;
+  color:yellow;
+box-shadow: 0 0 10px yellow;
+ padding:0px;
+ text-decoration: none;
+
+
+
+}
+
+
+.button-tvradio:hover {
+border: 1px solid white;
+  background-color:  white;
+  color: black;
+
+}
+
+   
+    
+
+   .menuxv {
+            position: relative;
+           
+            
+        }
+
+        .menuxv-button {
+            padding: 6px;
+            background-color: #3b7ba7;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 1px;
+            height:auto;
+            width:auto;
+             border: 1px solid cyan;
+            
+        }
+
+        .dropdownxv {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+           
+            background-color:#404A56;
+            //backdrop-filter:blur(20px);
+            border: 1px solid cyan;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            list-style-type: none;
+            margin: 0;
+            padding: 3px;
+            //transform: scale(3);
+            color:cyan;
+            
+        }
+
+        .dropdownxv li {
+            position: relative;
+            margin:auto;
+            
+        }
+
+        .dropdownxv a {
+            display: block;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+            white-space: nowrap;
+            background-color:#404A56;
+            backdrop-filter:blur(20px);
+            border:1px solid cyan;
+        }
+
+        .dropdownxv a:hover {
+         
+              background-color:#333B46;
+            
+             color:cyan;
+            
+        }
+
+        .submenuxv {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            background-color:rgba(0, 0, 0, 0.4);
+            backdrop-filter:blur(60px);
+            border: 1px solid cyan;
+            color:white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            list-style-type: none;
+            margin: 0;
+            padding: 3px;
+            z-index: 1000;
+        }
+
+        .dropdownxv li:hover > .submenuxv {
+            display: block;
+
+          
+           
+        }
+
+        .menuxv-button:hover + .dropdownxv,
+        .dropdownxv:hover {
+            display: block;
+        }
+
+
+.btmenu {
+
+ background-color:transparent;
+ width:100%;
+ height:auto:
+ margin:auto;
+ padding:10px;
+ color:white;
+ border:1px solid cyan;
+
+
+}
+
+.btmenu:hover {
+ background-color:#333B46;
+ color:cyan;
+
+}
+    
+
+        /* ????? ????? ???????? */
+        .slider-container {
+            background-color: rgba(0, 0, 0, 0.4);
+            width: 80%;
+            height: auto;
+            overflow: hidden;
+            overflow: auto;
+            position: relative;
+            margin: auto;
+            border: 1px solid yellow;
+            padding: 3px;
+            align-items: center;
+            justify-content: center;
+            display:flex;
+            flex-wrap: wrap;
+            
+        }
+
+        .slider {
+            display:flex;
+            transition: transform 1s linear;
+            margin-left:100%;
+             
+           
+              
+        }
+
+        .slide {
+            width: 80px;
+            height: 120px;
+            margin: 0 5px;
+            background-color: rgba(0, 0, 0, 0.3);
+            border: 1px solid yellow;
+            transition: transform 0.5s ease;
+            cursor: pointer;
+            display: flex;
+            color:yellow;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow:hidden;
+         box-shadow: 0 0 4px yellow;
+             font-size: 14px;
+        }
+
+        .slide.active {
+            transform: scale(1.1);
+            background-color: yellow;
+            border: 2px solid;
+            border-image-slice: 1;
+            animation: movingBorder 1s infinite linear;
+            color:black;
+        }
+
+        @keyframes movingBorder {
+            0% {
+                border-image: linear-gradient(90deg, red, blue, white) 1;
+            }
+            50% {
+                border-image: linear-gradient(90deg, white, red, blue) 1;
+            }
+            100% {
+                border-image: linear-gradient(90deg, blue, white, red) 1;
+            }
+        }
+
+        .story-display {
+           
+            width:300px;
+            height: auto;
+            border: 2px solid yellow; /* Optional border for visual clarity */
+            padding: 0px; /* Add some padding for readability */
+            
+            background-color:yellow;
+            text-align: center;
+           
+            font-size: 16px;
+            color: black;
+            line-height: 1.5;
+            font-size:14px;
+            overflow:hidden;
+            overflow:auto;
+           
+            
+        }
+        
+        .slider-thecontainer {
+           background-color: rgba(0, 0, 0, 0.4);
+            width: 80%;
+            height: auto;
+            overflow: hidden;
+            position: relative;
+            margin: auto;
+            border: 1px solid gray;
+            padding: 0px;
+            align-items: center;
+            justify-content: center;
+        
+        }
+    
+
+
+a:hover {
+    background-color: transparent;
+}
+
+
+
+    .button:hover {
+  background-color: cyan; /* Button color on hover */
+  color:black;
+}
+
+
+
+     #audio-player3 {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+       .container6 {
+           width: 70%;
+           height: 250px;
+           display: flex;
+           justify-content: center;
+           gap: 10px;
+       }
+
+       .container6 img {
+           width: 10%;
+           height: 100%;
+           object-fit: cover;
+           border-radius: 10px;
+           border: 2px solid white;
+           transition: all ease-in-out 0.5s;
+       }
+       .container6 img:hover {
+           width: 25%;
+       }
+
+
+
+
+
+
+           /* Style the container */
+        .text-container30 {
+
+            display: flex;
+            width: 300px;
+            max-width:400px;
+            height: auto;
+            margin: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+            border: 1px solid cyan;
+            padding: 6px;
+            border-radius: 12px;
+        }
+
+      .text-container20 {
+
+            display: flex;
+            width: 80%;
+            max-width:800px;
+            height: auto;
+            margin: auto;
+            background-color: rgba(0, 0, 0, 0.6);
+            border: 1px solid cyan;
+            padding: 6px;
+            border-radius: 12px;
+        }
+
+
+
+    .music-player {
+
+        margin: auto;
+         width: 98%;
+         height: 98%;
+        background-color: rgba(255, 255, 255, 0.2);
+        padding: 3px;
+        border-radius: 6px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    audio {
+        width: 100%;
+    }
+
+    .controls {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .btn {
+        background-color: transparent;
+        color: #fff;
+        border: 1px solid white;
+        border-radius: 4px;
+        padding: 3px;
+
+
+width: 40px;
+height: auto;
+
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .volume {
+
+        width: 100%;
+
+    }
+
+
+
+
+  .button30 {
+ display: inline-block;
+ padding: 6px;
+ margin: 3px;
+ background-color: rgba(0, 0, 0, 0.3);
+
+  border: 1px solid cyan;
+ border-radius: 3px;
+ font-size: 1em;
+ color: white;
+ text-align: center;
+ text-decoration: none;
+ }
+
+
+      .button30:hover {
+  background-color: cyan;
+  color:black;
+}
+
+
+
+
+    .player-container {
+
+            width: 80%;
+            max-width:800px;
+            background-color: rgba(0, 0, 0, 0.4);
+            border: 1px solid cyan;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .player-header {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .display {
+            width: 100%;
+            height: 50px;
+            background: linear-gradient(to bottom, #ffffff, #dcdcdc);
+            border: 1px solid #bbb;
+            border-radius: 5px;
+            line-height: 50px;
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .tcontrols {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .tcontrols button {
+            width: 50px;
+            height: 50px;
+            background-color: #ffffff;
+            border: 1px solid #bbb;
+            border-radius: 50%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .tcontrols button:hover {
+            background-color: #e7e7e7;
+        }
+
+        .tcontrols button:active {
+            background-color: #d1d1d1;
+            box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.3);
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+
+        .file-label {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #0078d7;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-size: 12px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .file-label:hover {
+            background-color: #005bb5;
+        }
+
+        .song-list {
+            margin-top: 20px;
+            border: 1px solid #bbb;
+            border-radius: 5px;
+            background-color: #ffffff;
+            padding: 10px;
+            max-height: 200px;
+            overflow-y: auto;
+            text-align: left;
+        }
+
+        .song-list button {
+            display: block;
+            width: 100%;
+            padding: 5px;
+            text-align: left;
+            border: none;
+            background: none;
+            color: #0078d7;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .song-list button:hover {
+            background-color: #e0f3ff;
+        }
+    
+      
+   
+
+
+
+
+
+
+
+ /* Flexible layout responsive design */
+
+ .header1 {
+ font-size: 0.5em;
+ padding: 2px;
+ }
+ /* Big red header with red border */
+ .header2 {
+ font-size: 4em;
+ padding: 2px;
+ }
+ /* Six buttons with code link to some pages in this project */
+ .button-group {
+ margin-top: 10px;
+ }
+ .button {
+ padding: 5px;
+ margin: 5px;
+ font-size: 1em;
+ }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.column {
+  flex: 100%;
+
+  padding: 5px;
+}
+.column img {
+
+  width: 100%;
+  height: auto;
+
+      }
+@media screen and (max-width: 600px) {
+  .column {
+
+    width: 100%;
+  }
+
+
+}
+
